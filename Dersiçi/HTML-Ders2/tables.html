@@ -6,61 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablolar</title>
     <style>
-        table
-        {
-            width:100%;
-            border-collapse:collapse
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
         }
-        td
-        {
-            text-align:center
+
+        td{
+            text-align: center;
         }
-        tr:nth-child(even)
-        {
-            background-color:grey;
+
+        tr:nth-child(even){
+            background-color: gray;
         }
-        #resim
-        {
+
+        #resim{
             background-image: url("https://picsum.photos/id/684/600/400");
-            background-size:cover;
-            height:100px;
-            color: red;
+            background-size: cover;
+            height: 100px;
+            color:yellow
         }
+
 
     </style>
 </head>
 <body>
     <h1>Tablolar</h1>
-    <table border="1" widht="100%">
-        <caption>Haftalık Dersler</caption>
+
+    <table border="1">
+        <caption style="font-size: 2rem ;">Haftalık Dersler</caption>
+
         <thead>
             <tr>
                 <th>Günler</th>
-                <th>Ders</th>
+                <th>Dersler</th>
                 <th>Not</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td id="resim">Pazartesi</td>
+                <td id="resim" >Pazartesi</td>
                 <td>HTML</td>
                 <td>85</td>
             </tr>
             <tr>
                 <td>Salı</td>
                 <td>CSS</td>
-                <td rowspan="3">90</td>
+                <td rowspan="2">90</td>
             </tr>
             <tr>
                 <td>Çarşamba</td>
-                <td>Java Script</td>
+                <td>JavaScript</td>
                 <!-- <td>90</td> -->
             </tr>
             <tr>
                 <td rowspan="2">Perşembe</td>
                 <td>React</td>
-                <!-- <td>98</td> -->
+                <td>98</td>
             </tr>
             <tr>
                 <!-- <td>Perşembe</td> -->
@@ -73,12 +76,13 @@
                 <td>80</td>
             </tr>
             <tr>
-                <td colspan="3">Cumartesi Tatil</td>
-                <!-- <td>Tatil</td> -->
-                <!-- <td>Tatil</td> -->
+                <td colspan="3" >Cumartesi Tatil</td>
+
             </tr>
 
         </tbody>
+
     </table>
+
 </body>
 </html>
