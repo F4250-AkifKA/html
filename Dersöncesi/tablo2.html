@@ -1,33 +1,66 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablo</title>
+    <style>
+        td {
+            text-align:center;
+            border: 1px solid blue;
+            text-shadow: 3px 3px 3px red;
+                }
+    </style>
 </head>
 <body>
-    <h1>Course Program</h1>
-    <table border="1">
+
+
+<table border="1" width="70%">
+    <caption>Table Example</caption>
+    <thead>
         <tr>
-            <th>Day</th>
-            <th>Lesson-1</th>
-            <th>Lesson-2</th>
+            <th rowspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
         </tr>
         <tr>
-            <th>Monday</th>
-            <td colspan="2">Java</td>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuesday</td>
+            <td>07.00 a.m</td>
+            <td>11.00 a.m</td>
+            <td rowspan="2">
+                Computer Fundamental
+                <ul>
+                    <li>Hardware</li>
+                    <li>OS</li>
+                    <li>Storage</li>
+                    <li>Data</li>
+                </ul>
+            </td>
         </tr>
         <tr>
-            <th>Tuesday</th>
-            <td>Maven</td>
-            <td>Gradle</td>
+            <td rowspan="3">Thursday</td>
+            <td>07.00 a.m</td>
+            <td>07.50 a.m</td>
         </tr>
         <tr>
-            <td>Wednesday</td>
-            <td>HTML</td>
-            <td>CSS</td>
+            <td>07:00 a.m</td>
+            <td>07:50 a.m</td>
+            <td rowspan="2"> HTML <br> CSS</td>
         </tr>
-    </table>
+        <tr>
+            <td>07:00 a.m</td>
+            <td>07:50 a.m</td>
+        </tr>
+    </tbody>
+
+
+</table>
 </body>
 </html>

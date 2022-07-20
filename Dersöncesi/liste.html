@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste</title>
+    <title>Listeler</title>
+    <style>
+        dt
+        {
+            background-color: grey;
+        }
+        dd
+        {
+            background-color: darkorange;
+        }
+        h4
+        {
+            background-color: aquamarine; color: red;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Lorem ipsum dolor sit.</li>
-    </ul>
-    <ol><li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Lorem ipsum dolor sit.</li>
+    <h1>Listeler</h1>
+    <hr>
+    <h4>Ordered List</h4>
+    <hr>
+    <h6>Araba Markaları</h6>
+    <ol type="i" reversed  >
+        <li>BMW</li>
+        <li>Mercedes</li>
+        <li>Volvo</li>
+        <li>Volkswagen</li>
+        <li>Toyata</li>
     </ol>
+    <h4>Unordered List</h4>
+    <hr>
+    <h6>Araba Markaları</h6>
+    <ul style="list-style-type:georgian">
+        <li>Galatasaray</li>
+        <li>Beşiktaş</li>
+        <li>Cacık Spor</li>
+        <li style="border: 3px solid red">Ekmek Spor</li>
+        <li>Erzin Spor</li>
+    </ul>
+    <h4>Description List</h4>
+    <hr>
+    <h6>Hayvanlar</h6>
+    <dl style="background-color:aliceblue">
+        <dt style="background-color:blueviolet">Aslan</dt>
+        <dd>Ormanın kralı</dd>
+        <dt>Balık</dt>
+        <dd>Suda yüzen hayvan</dd>
+        <dt>At</dt>
+        <dd>Asil binek hayvanı</dd>
+        <dt>Köpek</dt>
+        <dd>Sadık dost</dd>
+    </dl>
+
+
+
+
 </body>
 </html>
